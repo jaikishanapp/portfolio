@@ -590,6 +590,12 @@ footer span a:hover{
         width: 350px;
     }
 }
+@media (max-width: 1104px) {
+    .services .serv-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
 
 @media (max-width: 991px) {
     .max-width{
@@ -697,6 +703,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
+    
     .services .serv-content .right img{
         width: 90%;
     }
