@@ -254,21 +254,46 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams, .skills{
+.teams, .skills{
     color:#fff;
     background: #111;
 }
-.services .title::before,
+.services .title::before{
+    background: #111;
+}
 .teams .title::before,
 .skills .title::before{
     background: #fff;
 }
-.services .title::after,
+.services .title::after{
+    background: #fff;
+    content: "what i provide";
+}
 .teams .title::after,
 .skills .title::after{
     background: #111;
-    content: "what i provide";
 }
+.services .serv-content .left{
+    width: 45%;
+}
+.services .serv-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.services .serv-content .right{
+    width: 55%;
+}
+.services .serv-content .right a{
+    height: auto;
+    width: auto;
+    padding: 10px 30px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -625,6 +650,17 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
+    .services .serv-content .column{
+        width: 100%;
+    }
+    .services .serv-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .services .serv-content .right{
+        flex: 100%; 
+    }
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -660,6 +696,9 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 27px;
+    }
+    .services .serv-content .right img{
+        width: 90%;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
