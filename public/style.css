@@ -513,6 +513,14 @@ section .title::after{
     height: 80px;
     width: 100%;
 }
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: rgb(168, 240, 177);
+    color: green;
+    margin-bottom: 10px;
+    display: none;
+  }
 .contact .right form .name{
     margin-right: 10px;
 }
@@ -667,6 +675,9 @@ footer span a:hover{
     .services .serv-content .right{
         flex: 100%; 
     }
+    .services .serv-content .right img{
+        width: 90%;
+    }
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -691,6 +702,9 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
+    .services .serv-content .right img{
+        width: 90%;
+    }
     .services .serv-content .card{
         width: 100%;
     }
@@ -705,7 +719,7 @@ footer span a:hover{
     }
     
     .services .serv-content .right img{
-        width: 80%;
+        width: 90%;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
